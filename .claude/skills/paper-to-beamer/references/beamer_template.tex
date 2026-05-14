@@ -1,0 +1,259 @@
+% =============================================================================
+% Paper-to-Beamer Reference Template
+% =============================================================================
+% This template provides a structured academic presentation layout.
+% Replace all <<<PLACEHOLDER>>> markers with paper-specific content.
+%
+% Compilation: pdflatex main.tex  (run twice for TOC)
+% =============================================================================
+
+\documentclass[aspectratio=169, 11pt]{beamer}
+
+% --- Theme & Colors ---------------------------------------------------------
+% Madrid is clean and professional. Alternatives: CambridgeUS, Boadilla, AnnArbor
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% Remove navigation symbols (the little icons at bottom-right)
+\setbeamertemplate{navigation symbols}{}
+
+% Show frame numbers in the footer
+\setbeamertemplate{footline}[frame number]
+
+% --- Packages ---------------------------------------------------------------
+\usepackage{graphicx}       % For \includegraphics
+\graphicspath{{figure/}}    % Look for images in figure/ subdirectory
+\usepackage{booktabs}       % For professional LaTeX tables (if needed)
+\usepackage{amsmath}        % For equations
+\usepackage{hyperref}       % For clickable links
+\usepackage[T1]{fontenc}    % Better font encoding
+
+% --- Metadata ---------------------------------------------------------------
+\title{<<<PAPER TITLE>>>}
+\subtitle{Summary of <<<AUTHOR(S) (YEAR)>>>}
+\author{<<<AUTHOR 1>>> \and <<<AUTHOR 2>>>}
+\institute{<<<INSTITUTION 1>>> \and <<<INSTITUTION 2>>>}
+\date{\textit{<<<JOURNAL NAME>>>}, <<<VOLUME>>>, <<<PAGES>>>}
+
+% =============================================================================
+\begin{document}
+
+% --- Title Slide -------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% --- Outline -----------------------------------------------------------------
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% =============================================================================
+\section{Research Questions}
+% =============================================================================
+
+\begin{frame}{Research Questions}
+
+<<<BRIEF CONTEXT: 2-3 sentences on why this topic matters.>>>
+
+\bigskip
+This paper asks:
+\begin{enumerate}
+  \item \textbf{<<<RESEARCH QUESTION 1>>>}
+  \item \textbf{<<<RESEARCH QUESTION 2>>>}
+\end{enumerate}
+
+\bigskip
+\textbf{Broader motivation:} <<<WHY DOES THIS MATTER FOR THE FIELD?>>>
+
+\end{frame}
+
+% =============================================================================
+\section{Related Literature}
+% =============================================================================
+
+\begin{frame}{Related Literature (1/2)}
+
+\textbf{1. <<<AUTHOR (YEAR)>>> --- <<<SHORT TITLE/TOPIC>>>}
+\begin{itemize}
+  \item <<<KEY FINDING OR MODEL>>>
+  \item <<<IMPLICATION FOR THE CURRENT PAPER>>>
+\end{itemize}
+
+\bigskip
+\textbf{2. <<<AUTHOR (YEAR)>>> --- <<<SHORT TITLE/TOPIC>>>}
+\begin{itemize}
+  \item <<<KEY FINDING OR MODEL>>>
+  \item <<<IMPLICATION FOR THE CURRENT PAPER>>>
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------------------
+
+\begin{frame}{Related Literature (2/2)}
+
+\textbf{3. <<<AUTHOR (YEAR)>>> --- <<<SHORT TITLE/TOPIC>>>}
+\begin{itemize}
+  \item <<<KEY FINDING OR MODEL>>>
+  \item <<<IMPLICATION FOR THE CURRENT PAPER>>>
+\end{itemize}
+
+\bigskip
+\textbf{Other key references:}
+\begin{itemize}
+  \item <<<AUTHOR (YEAR)>>>: <<<ONE-LINE SUMMARY>>>
+  \item <<<AUTHOR (YEAR)>>>: <<<ONE-LINE SUMMARY>>>
+  \item <<<AUTHOR (YEAR)>>>: <<<ONE-LINE SUMMARY>>>
+\end{itemize}
+
+\end{frame}
+
+% =============================================================================
+\section{Model and Variables}
+% =============================================================================
+
+\begin{frame}{Empirical Model}
+
+<<<BRIEF DESCRIPTION OF THE ESTIMATION APPROACH>>>
+
+\bigskip
+\textbf{<<<MODEL NAME / STAGE 1>>>:}
+\[
+<<<EQUATION OR SPECIFICATION>>>
+\]
+\begin{itemize}
+  \item <<<WHAT THE DEPENDENT VARIABLE IS>>>
+\end{itemize}
+
+\bigskip
+\textbf{<<<MODEL NAME / STAGE 2 (if applicable)>>>:}
+\[
+<<<EQUATION OR SPECIFICATION>>>
+\]
+\begin{itemize}
+  \item <<<WHAT THE DEPENDENT VARIABLE IS>>>
+\end{itemize}
+
+\end{frame}
+
+% -----------------------------------------------------------------------------
+
+\begin{frame}{Key Variables}
+
+\textbf{<<<VARIABLE GROUP 1 (e.g., Information variables)>>>:}
+\begin{itemize}
+  \item <<<VAR1 (description)>>>, <<<VAR2 (description)>>>
+\end{itemize}
+
+\textbf{<<<VARIABLE GROUP 2 (e.g., Agency variables)>>>:}
+\begin{itemize}
+  \item <<<VAR3 (description)>>>, <<<VAR4 (description)>>>
+\end{itemize}
+
+\textbf{<<<VARIABLE GROUP 3 (e.g., Control variables)>>>:}
+\begin{itemize}
+  \item <<<VAR5>>>, <<<VAR6>>>, <<<VAR7>>>
+\end{itemize}
+
+\end{frame}
+
+% =============================================================================
+\section{Data}
+% =============================================================================
+
+\begin{frame}{Data Description}
+
+\textbf{Source:} <<<DATABASE / SURVEY NAME>>>
+
+\bigskip
+\textbf{Sample:}
+\begin{itemize}
+  \item <<<SAMPLE DESCRIPTION (what units, what filters)>>>
+  \item <<<TIME PERIOD>>>
+  \item <<<SAMPLE SIZE>>>
+\end{itemize}
+
+\bigskip
+\textbf{Key descriptive facts:}
+\begin{itemize}
+  \item <<<FACT 1>>>
+  \item <<<FACT 2>>>
+  \item <<<FACT 3>>>
+  \item <<<FACT 4>>>
+\end{itemize}
+
+\end{frame}
+
+% =============================================================================
+\section{Empirical Results}
+% =============================================================================
+
+% --- TABLE / FIGURE IMAGE SLIDE ----------------------------------------------
+% Repeat this pair (image + interpretation) for each key table or figure.
+
+\begin{frame}{<<<TABLE/FIGURE LABEL>>> --- <<<SHORT DESCRIPTION>>>}
+  \begin{center}
+    \includegraphics[height=0.82\textheight]{figure/<<<table_or_figure_filename.png>>>}
+  \end{center}
+\end{frame}
+
+% --- INTERPRETATION SLIDE ----------------------------------------------------
+
+\begin{frame}{Interpreting <<<TABLE/FIGURE LABEL>>>}
+
+\textbf{<<<VARIABLE GROUP OR THEME 1>>>:}
+\begin{itemize}
+  \item <<<FINDING 1>>>
+  \item <<<FINDING 2>>>
+\end{itemize}
+
+\textbf{<<<VARIABLE GROUP OR THEME 2>>>:}
+\begin{itemize}
+  \item <<<FINDING 3>>>
+  \item <<<FINDING 4>>>
+\end{itemize}
+
+\textbf{<<<VARIABLE GROUP OR THEME 3>>>:}
+\begin{itemize}
+  \item <<<FINDING 5>>>
+  \item <<<FINDING 6>>>
+\end{itemize}
+
+\end{frame}
+
+% --- (Copy the image + interpretation pair above for each additional table) --
+
+% =============================================================================
+\section{Conclusions}
+% =============================================================================
+
+\begin{frame}{Key Findings and Contributions}
+
+\begin{enumerate}
+  \item \textbf{<<<CONTRIBUTION 1 TITLE>>>:} <<<1-2 SENTENCE SUMMARY>>>
+
+  \bigskip
+  \item \textbf{<<<CONTRIBUTION 2 TITLE>>>:} <<<1-2 SENTENCE SUMMARY>>>
+
+  \bigskip
+  \item \textbf{<<<CONTRIBUTION 3 TITLE>>>:} <<<1-2 SENTENCE SUMMARY>>>
+
+  \bigskip
+  \item \textbf{<<<CONTRIBUTION 4 TITLE>>>:} <<<1-2 SENTENCE SUMMARY>>>
+\end{enumerate}
+
+\end{frame}
+
+% --- Thank You ---------------------------------------------------------------
+
+\begin{frame}{}
+  \begin{center}
+    {\Large Thank You}
+
+    \bigskip
+    {\normalsize Questions?}
+  \end{center}
+\end{frame}
+
+\end{document}
