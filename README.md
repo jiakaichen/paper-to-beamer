@@ -94,33 +94,15 @@ instructions to create Beamer slides from the attached paper.
 
 ## Usage Examples
 
-### Basic usage
-
 ```
-Summarize this paper as Beamer slides. Extract Tables 2-5 as images.
-[attach PDF]
-```
-
-### Customized request
-
-```
-Create a 15-minute talk from this paper. Focus on the empirical results
-and include Tables III and IV. Use the metropolis Beamer theme instead.
-[attach PDF]
-```
-
-### Specific tables only
-
-```
-Extract Table 1 and Figure 3 from this paper as high-resolution images
-and build a short slide deck around the main findings.
-[attach PDF]
-```
-
-### Comprehensive
-
-```
-Generate a LaTeX Beamer slide deck to summarize the paper in the `paper` folder. Discuss the paper's research question, the five most related papers in the literature, the research data, the key empirical measure and its construction, the key empirical identification strategy, and the empirical results. Generate the Beamer TeX code for Beamer slides under the `beamer` folder. In addition, obtain the Tables and Figures from the paper, save them as image files in the `figure` folder under `beamer`, and include them in the Beamer TeX code. 
+Generate a LaTeX Beamer slide deck to summarize the paper in the `paper` 
+folder. Discuss the paper's research question, the five most related 
+papers in the literature, the research data, the key empirical measure 
+and its construction, the key empirical identification strategy, and the 
+empirical results. Generate the Beamer TeX code for Beamer slides under 
+the `beamer` folder. In addition, obtain the Tables and Figures from 
+the paper, save them as image files in the `figure` folder under 
+`beamer`, and include them in the Beamer TeX code. 
 ```
 
 ## Dependencies
