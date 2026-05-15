@@ -40,20 +40,6 @@ your-project/
                 └── beamer_template.tex
 ```
 
-## Skill Directory Structure
-
-```
-paper-to-beamer/
-├── SKILL.md                          # Main skill instructions
-├── scripts/
-│   ├── __init__.py
-│   ├── inspect_pdf.py                # PDF content inventory
-│   └── crop_tables.py                # Crop tables/figures from pages
-├── references/
-│   └── beamer_template.tex           # Starter Beamer template
-└── assets/                           # (empty — for future custom themes)
-```
-
 ## Installation
 
 ### Claude Code (CLI)
